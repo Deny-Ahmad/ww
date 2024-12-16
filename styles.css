@@ -1,0 +1,138 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    background-color: #4CAF50; /* Green header */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    flex: 1;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.profile-name {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.profile-class,
+.profile-level {
+    font-size: 16px;
+    color: #666;
+}
+
+.carousel {
+    position: relative;
+    margin-top: 15px;
+    overflow: hidden; /* Hides the overflow of slides */
+    height: 200px; /* Set a height for the carousel */
+}
+
+.carousel-slides {
+    display: flex; /* Allows slides to be placed horizontally */
+    transition: transform 0.5s ease; /* Smooth transition effect */
+}
+
+.slide {
+    min-width: 100%; /* Each slide takes the full width */
+    opacity: 0; /* Hide slides by default */
+    transition: opacity 0.5s ease; /* Smooth opacity change */
+}
+
+.slide.active {
+    opacity: 1; /* Show active slide */
+}
+
+.stats-slide {
+    background-color: #2196F3; /* Blue background for stats */
+    color: white;
+    padding: 20px;
+}
+
+.skills-slide {
+    background-color: #FF9800; /* Orange background for skills */
+    color: white;
+    padding: 20px;
+}
+
+.achievements-slide {
+    background-color: #9C27B0; /* Purple background for achievements */
+    color: white;
+    padding: 20px;
+}
+
+.carousel-buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.carousel-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #4CAF50; /* Same green as header */
+    padding: 10px 0;
+}
+
+.footer-button {
+    background-color: white;
+    color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-button:hover {
+    background-color: #f1f1f1; /* Lighten button on hover */
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* Light separator line */
+}

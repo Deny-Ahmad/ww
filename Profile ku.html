@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Profile App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="header">
+            <h1>Gaming Profile</h1>
+        </div>
+
+        <div class="profile-card">
+            <img src="your-character-image.jpg" alt="Character Name" class="profile-image">
+            <h2 class="profile-name">Character Name</h2>
+            <p class="profile-class">Class: Warrior</p>
+            <p class="profile-level">Level: 25</p>
+
+            <div class="carousel">
+                <div class="carousel-slides">
+                    <div class="slide active stats-slide">
+                        <h3>Stats</h3>
+                        <ul>
+                            <li><strong>Health:</strong> 1500</li>
+                            <li><strong>Attack:</strong> 300</li>
+                            <li><strong>Defense:</strong> 250</li>
+                            <li><strong>Speed:</strong> 120</li>
+                        </ul>
+                    </div>
+
+                    <div class="slide skills-slide">
+                        <h3>Skills</h3>
+                        <ul>
+                            <li>Heavy Strike</li>
+                            <li>Shield Block</li>
+                            <li>Battle Roar</li>
+                        </ul>
+                    </div>
+
+                    <div class="slide achievements-slide">
+                        <h3>Achievements</h3>
+                        <ul>
+                            <li>Defeated the Dragon King</li>
+                            <li>Completed the Quest of Legends</li>
+                            <li>Master of the Arena</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="carousel-buttons">
+                    <button class="carousel-button prev" onclick="changeSlide(-1)">&#10094;</button>
+                    <button class="carousel-button next" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <button class="footer-button" onclick="showSlide('stats')">Stats</button>
+            <button class="footer-button" onclick="showSlide('skills')">Skills</button>
+            <button class="footer-button" onclick="showSlide('achievements')">Achievements</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
